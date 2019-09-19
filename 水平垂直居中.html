@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>水平垂直居中</title>
+    <style>
+        /* 
+        水平居中
+ */
+        .parent {
+            /* text-align: center; */
+            /* width: fit-content;
+            margin: 0 auto;         */
+        }
+
+        .son {
+            width: 50%;
+            /* margin: 0 auto; */
+            /* float: left; */
+            /* display: flex;
+            justify-content: center; */
+            position: absolute;
+            /* left: 50%; */
+            /* transform: translate(-50%, 0); */
+            /* margin-left: -25%; */
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        /* 垂直居中 */
+        /* .parent2::after,
+        .son2 {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .parent {
+            height: 200px;
+        }
+
+        .parent2::after {
+            content: '';
+            height: 100%;
+        } */
+
+        .parent2 {
+            height: 200px;
+            /* display: flex;
+            align-items: center; */
+            position: relative;
+        }
+
+        .son2 {
+            height: 100px;
+            /* display: table-cell;
+             vertical-align: middle; */
+
+            position: absolute;
+            /* top: 50%; */
+            /* transform: translate(50%, 50%); */
+            /* margin-top: -50px; */
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="parent">
+        <span>子元素</span>
+        <div class="son">子元素</div>
+    </div> -->
+
+    <div class="parent2">
+        <!-- <span>子元素</span> -->
+        <div class="son2">子元素</div>
+    </div>
+
+    <!-- 实现最大的正方形 -->
+    <section style="width:100%;padding-bottom: 100%;background: #333;">
+
+    </section>
+</body>
+
+</html>
